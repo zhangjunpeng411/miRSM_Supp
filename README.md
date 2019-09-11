@@ -1,2 +1,2 @@
 # miRSM_Supp
-The supplementary material of a case study by using miRSM package
+In the supplementary material, we provide a case study to infer and analyze miRNA sponge modules by using miRSM package.

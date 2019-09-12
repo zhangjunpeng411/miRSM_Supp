@@ -7,7 +7,7 @@ MicroRNAs (miRNAs) play key roles in many biological processes including cancers
 To speed up the research of miRNA sponge modules, we develop an R/Bioconductor package ‘miRSM’ to infer miRNA sponge modules. Unlike the existing R/Bioconductor packages (‘miRspongeR’ and ‘SPONGE’), ‘miRSM’ focuses on identifying miRNA sponge modules by integrating expression data and miRNA-target binding information instead of miRNA sponge interaction networks. 
 
 ## Description of each file
-BRCA_SampleData.rda: Matched miRNA, lncRNA and mRNA expression data of BRCA, and putative miRNA-target interactions.
+BRCA_SampleData.rda: Matched miRNA, lncRNA and mRNA expression data of BRCA, putative miRNA-target interactions, BRCA related genes, and experimentally validated lncRNA related miRNA sponge interactions.
 
 miRSM_scripts.R: Scripts for a case study to infer and analyze miRNA sponge modules by using miRSM package.
 

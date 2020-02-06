@@ -52,71 +52,71 @@ modulegenes_biclust_BCs4vd <- module_biclust(ceRExp, mRExp, BCmethod = "BCs4vd",
 modulegenes_biclust_bibit <- module_biclust(ceRExp, mRExp, BCmethod = "bibit", num.modules = num.modules)
 modulegenes_biclust_quBicluster <- module_biclust(ceRExp, mRExp, BCmethod = "quBicluster", num.modules = num.modules)
 
-## Identification of lncRNA related miRNA sponge modules by integrating the canonical correlation (CC) and sensitivity canonical correlation (SCC) methods.
+## Identification of lncRNA related miRNA sponge modules using sensitivity canonical correlation (SCC) method.
 ## As a result, 17 out 21 (bi)cluster methods of identifying lncRNA-mRNA co-expression modules can generate miRNA sponge modules.
 miRSM_WGCNA <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_WGCNA, 
                         num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                        method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                        method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_GFA <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_GFA, 
                         num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                        method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                        method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_igraph_greedy <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_igraph_greedy, 
                         num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                        method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                        method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_ProNet_MCL <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_ProNet_MCL, 
                         num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                        method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                        method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_NMF_brunet <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_NMF_brunet, 
                         num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                        method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                        method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_clust_kmeans <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_clust_kmeans, 
                          num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                         method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                         method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_clust_hclust <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_clust_hclust, 
                          num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                         method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                         method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_clust_dbscan <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_clust_dbscan, 
                          num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                         method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                         method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_clust_clique <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_clust_clique, 
                          num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                         method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                         method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_clust_gmm <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_clust_gmm, 
                          num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                         method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                         method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_clust_som <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_clust_som, 
                          num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                         method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                         method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_clust_fcm <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_clust_fcm, 
                          num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                         method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                         method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_biclust_BCSpectral <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_biclust_BCSpectral, 
                          num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                         method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                         method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_biclust_BCUnibic <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_biclust_BCUnibic, 
                         num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                        method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                        method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_biclust_iBBiG <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_biclust_iBBiG, 
                         num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                        method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                        method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_biclust_fabia <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_biclust_fabia, 
                         num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                        method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                        method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_biclust_FLOC <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_biclust_FLOC, 
                         num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                        method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                        method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_biclust_isa <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_biclust_isa, 
                         num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                        method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                        method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_biclust_BCs4vd <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_biclust_BCs4vd, 
                         num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                        method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                        method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_biclust_bibit <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_biclust_bibit, 
                         num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                        method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                        method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 miRSM_biclust_quBicluster <- miRSM(miRExp, ceRExp, mRExp, miRTarget, modulegenes_biclust_quBicluster, 
                         num_shared_miRNAs = 3, pvalue.cutoff = 0.05, 
-                        method = "CCplusSCC",  CC.cutoff = 0.8, SCC.cutoff = 0.1)
+                        method = "SCC",  MC.cutoff = 0.8, SMC.cutoff = 0.1)
 
 ## Modular analysis of the identified miRNA sponge modules. 
 # Functional analysis of miRNA sponge modules

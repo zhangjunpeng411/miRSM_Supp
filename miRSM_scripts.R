@@ -3,7 +3,6 @@ load("BRCA_SampleData.rda")
 
 ## Load miRSM package, and reimport NMF package to avoid conflicts with DelayedArray package
 suppressMessages(library(miRSM))
-suppressMessages(library(miRspongeR))
 suppressMessages(library(NMF))
 
 ## Identification of lncRNA-mRNA co-expression modules using different methods

@@ -12,7 +12,7 @@ BRCA_SampleData.rda: Matched miRNA, lncRNA and mRNA expression data of BRCA, put
 miRSM_scripts.R: Scripts for a case study to infer and analyze miRNA sponge modules by using miRSM package.
 
 ## The usage
-Paste all files into a single folder (set the folder as the directory of R environment). Users can simply run the scripts as follows.
+Paste all files into a single folder (set the folder as the directory of R environment). Users can simply run the scripts as follows. The usage of functions in miRSM package can be seen at https://bioconductor.org/packages/miRSM/.
 
 ```{r echo=FALSE, results='hide', message=FALSE}
 source("miRSM_scripts.R")
